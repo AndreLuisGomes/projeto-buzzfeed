@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { QuizzComponent } from "../../components/quizz/quizz.component";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  imports: [QuizzComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
